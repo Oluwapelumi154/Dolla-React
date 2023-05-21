@@ -1,7 +1,7 @@
 import React from "react";
 import { Nav, NavBrand, NavLinks, NavButton} from "../../styles/Navbar";
 import { NavLink } from "react-router-dom";
-const Navbar = () => {
+const NavBar = () => {
   return (
     <Nav>
       <NavBrand>dolla</NavBrand>
@@ -20,4 +20,4 @@ const Navbar = () => {
     </Nav>
   );
 };
-export default Navbar;
+export default NavBar;
