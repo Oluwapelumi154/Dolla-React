@@ -11,15 +11,19 @@ const routes = [
   {
     path: "/",
     element: (
-      <LayoutWrapper displayNav={true} displayFooter={true} Component={Home} />
+      <LayoutWrapper
+        renderNavComponent={true}
+        renderFooterComponent={true}
+        Component={Home}
+      />
     ),
   },
   {
     path: "/contact",
     element: (
       <LayoutWrapper
-        displayNav={true}
-        displayFooter={true}
+        renderNavComponent={true}
+        renderFooterComponent={true}
         Component={Contact}
       />
     ),
@@ -27,7 +31,11 @@ const routes = [
   {
     path: "/about",
     element: (
-      <LayoutWrapper displayNav={true} displayFooter={true} Component={About} />
+      <LayoutWrapper
+        renderNavComponent={true}
+        renderFooterComponent={true}
+        Component={About}
+      />
     ),
   },
   {

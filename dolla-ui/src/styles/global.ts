@@ -1,4 +1,10 @@
 import { createGlobalStyle } from "styled-components";
+export const theme = {
+  colors: {
+    white: "#ffff",
+    black: "#071125"
+  },
+};
 
 export const GlobalStyle = createGlobalStyle`
 body {
@@ -13,9 +19,5 @@ body {
   padding: 0;
   margin: 0;
   font-family: "poppins",sans-serif;
-}
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }
 `;

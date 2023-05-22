@@ -1,12 +1,13 @@
 import NavBar from "../../components/Navbar/Navbar";
 import Footer from "../../pages/Footer/Footer";
 const LayoutWrapper = (props: any) => {
-  const { displayNav, displayFooter, Component } = props;
+  const {  renderNavComponent, renderFooterComponent, Component } = props;
   return (
     <>
-      {displayNav && <NavBar />}
+        {renderNavComponent && <NavBar />}
       <Component />
-      {displayFooter && <Footer />}
+      {renderFooterComponent && <Footer />}
+      
     </>
   );
 };

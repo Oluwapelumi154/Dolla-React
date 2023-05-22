@@ -1,22 +1,45 @@
 import React from "react";
-import { Nav, NavBrand, NavLinks, NavButton} from "../../styles/Navbar";
-import { NavLink } from "react-router-dom";
+import {
+  Nav,
+  NavBrand,
+  NavLinks,
+  NavMenu,
+  NavBtnLink,
+  NavContainer,
+  NavButtonContainer,
+  MobileIcon,
+  NavItem,
+} from "../../styles/Navbar";
+import { FaBars } from "react-icons/fa";
 const NavBar = () => {
   return (
     <Nav>
-      <NavBrand>dolla</NavBrand>
-      <NavLinks>
-        <NavLink to="/home">
-          Home
-        </NavLink>
-        <NavLink to="/contact">
-          Contact
-        </NavLink>
-        <NavLink to="/about">
-          About
-        </NavLink>
-      </NavLinks>
-      <NavButton>Signup</NavButton>
+      <NavContainer>
+        <NavBrand to="/">dolla</NavBrand>
+        <MobileIcon>
+          <FaBars />
+        </MobileIcon>
+        <NavMenu>
+          <NavItem>
+            <NavLinks to="/contact">Contact</NavLinks>
+          </NavItem>
+          <NavItem>
+            <NavLinks to="/discover">Discover</NavLinks>
+          </NavItem>
+          <NavItem>
+            <NavLinks to="/about">About</NavLinks>
+          </NavItem>
+          <NavItem>
+            <NavLinks to="/services">Services</NavLinks>
+          </NavItem>
+          <NavItem>
+            <NavLinks to="/signup">Sign up</NavLinks>
+          </NavItem>
+        </NavMenu>
+        <NavButtonContainer>
+          <NavBtnLink to="/signin">SignIn</NavBtnLink>
+        </NavButtonContainer>
+      </NavContainer>
     </Nav>
   );
 };
