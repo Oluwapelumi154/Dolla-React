@@ -10,7 +10,7 @@ import {
   MobileIcon,
   NavItem,
 } from "../../styles/Navbar";
-import { FaBars } from "react-icons/fa";
+import { FaBars } from "../../libs";
 const NavBar = () => {
   return (
     <Nav>
@@ -33,11 +33,11 @@ const NavBar = () => {
             <NavLinks to="/services">Services</NavLinks>
           </NavItem>
           <NavItem>
-            <NavLinks to="/signup">Sign up</NavLinks>
+            <NavLinks to="/sign-up">Sign up</NavLinks>
           </NavItem>
         </NavMenu>
         <NavButtonContainer>
-          <NavBtnLink to="/signin">SignIn</NavBtnLink>
+          <NavBtnLink to="/sign-in">SignIn</NavBtnLink>
         </NavButtonContainer>
       </NavContainer>
     </Nav>

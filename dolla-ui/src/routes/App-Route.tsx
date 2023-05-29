@@ -1,8 +1,8 @@
 import React from "react";
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter } from "../libs";
 import Home from "../pages/Home/Home";
-import About from "../pages/About/About";
-import Contact from "../pages/Contact/Contact";
+import About from "../pages/About/components/About";
+import Contact from "../pages/Contact/components/Contact";
 import LayoutWrapper from "../utils/Wrapper/Layout-wrapper";
 
 /** Routes */

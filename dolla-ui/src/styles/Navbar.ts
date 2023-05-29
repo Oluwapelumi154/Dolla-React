@@ -1,6 +1,4 @@
-import styled from "styled-components";
-import { Link as LinkRouter } from "react-router-dom";
-import { Link as LinkScroll } from "react-scroll";
+import { styled, LinkRouter, LinkScroll } from "../libs";
 export const Nav = styled.nav`
   height: 80px;
   background-color: #071125;
@@ -21,7 +19,7 @@ export const NavContainer = styled.div`
   display: flex;
   justify-content: space-between;
   height: 80px;
-  z-index: 1;
+  /* z-index: 1; */
   width: 100%;
   max-width: 1100px;
   padding: 0 24px;
@@ -57,7 +55,7 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style-type: none;
   text-align: center;
-  /* margin-right: -22px; */
+  margin-left: 22px;
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -73,6 +71,7 @@ export const NavLinks = styled(LinkScroll)`
   align-items: center;
   padding: 0 1rem;
   height: 100%;
+  /* height: 100%; */
   cursor: pointer;
 
   &:active {
