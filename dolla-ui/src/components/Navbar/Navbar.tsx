@@ -1,4 +1,6 @@
 import React from "react";
+import { Navprops } from "../../interfaces";
+import { FaBars } from "../../libs";
 import {
   Nav,
   NavBrand,
@@ -10,13 +12,13 @@ import {
   MobileIcon,
   NavItem,
 } from "../../styles/Navbar";
-import { FaBars } from "../../libs";
-const NavBar = () => {
+
+const NavBar: React.FC<Navprops> = ({menuToggler}: Navprops) => {
   return (
     <Nav>
       <NavContainer>
         <NavBrand to="/">dolla</NavBrand>
-        <MobileIcon>
+        <MobileIcon onClick={menuToggler}>
           <FaBars />
         </MobileIcon>
         <NavMenu>

@@ -1,7 +1,8 @@
 import { styled, LinkRouter, LinkScroll } from "../libs";
 export const Nav = styled.nav`
   height: 80px;
-  background-color: #071125;
+  /* background-color: #071125; */
+  background-color: ${(props) => props.theme.colors.black};
   display: flex;
   justify-content: center;
   /* margin-top: -80px; */
@@ -75,7 +76,7 @@ export const NavLinks = styled(LinkScroll)`
   cursor: pointer;
 
   &:active {
-    border-bottom: 2px solid #01bf71;
+    border-bottom: 2px solid ${({theme})=> theme.colors.lemon};
   }
 `;
 export const NavBtnLink = styled(LinkScroll)`
@@ -83,7 +84,7 @@ export const NavBtnLink = styled(LinkScroll)`
   border: 0;
   border-radius: 50px;
   white-space: nowrap;
-  background-color: #01bf71;
+  background-color: ${({theme})=> theme.colors.lemon};
   padding: 10px 22px;
   color: #010606;
   font-size: 16px;

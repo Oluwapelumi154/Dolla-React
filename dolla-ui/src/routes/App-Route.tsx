@@ -12,8 +12,8 @@ const routes = [
     path: "/",
     element: (
       <LayoutWrapper
-        renderNavComponent={true}
-        renderFooterComponent={true}
+        renderNavBar={true}
+        renderFooter={true}
         Component={Home}
       />
     ),
@@ -22,8 +22,8 @@ const routes = [
     path: "/contact",
     element: (
       <LayoutWrapper
-        renderNavComponent={true}
-        renderFooterComponent={true}
+        renderNavBar={true}
+        renderFooter={true}
         Component={Contact}
       />
     ),
@@ -32,8 +32,8 @@ const routes = [
     path: "/about",
     element: (
       <LayoutWrapper
-        renderNavComponent={true}
-        renderFooterComponent={true}
+        renderNavBar={true}
+        renderFooter={true}
         Component={About}
       />
     ),

@@ -1,21 +1,12 @@
-import NavBar from "../../components/Navbar/Navbar";
 import Footer from "../../pages/Footer/components/Footer";
-import Sidebar from "../../pages/Sidebar/components/Sidebar";
-interface Layout {
-  renderNavComponent: any;
-  renderFooterComponent: any;
-  Component: any;
-}
-const LayoutWrapper: React.FC<Layout> = (props: Layout) => {
-  const { renderNavComponent, renderFooterComponent, Component } = props;
+import { LayoutProps } from "../../interfaces";
+const LayoutWrapper: React.FC<LayoutProps> = (props: LayoutProps) => {
+  const { renderNavBar, renderFooter, Component } = props;
   return (
     <>
-    <Sidebar/>
-      {renderNavComponent && <NavBar />}
-      <Component />
-      {renderFooterComponent && <Footer />}
+      <Component renderNavBar={renderNavBar} />
+      {renderFooter && <Footer />}
     </>
   );
 };
-
 export default LayoutWrapper;
