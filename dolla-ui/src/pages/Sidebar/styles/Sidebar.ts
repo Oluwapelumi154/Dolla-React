@@ -11,7 +11,6 @@ export const SidebarContainer = styled.div<Styled_SidebarContainer_Props>`
   display: grid;
   align-items: center;
   left: 0;
-  top: 0;
   transition: 0.3s ease-in-out;
   z-index: 999;
   opacity: ${({isOpen }) => (isOpen ? "100%" : "0")};
@@ -24,7 +23,6 @@ export const CloseIcon = styled.div`
   top: 1.2rem;
   right: 1.5rem;
   font-size: 2rem;
-  border: 2px solid red;
   outline: none;
   background: transparent;
 `;
