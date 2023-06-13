@@ -1,9 +1,12 @@
 import { LinkScroll,styled } from "../../../libs";
 interface ButtonProps {
-    primary?: boolean;
+    primary?: any;
     big?: boolean;
-    dark?: boolean;
-    fontBig?: boolean
+    dark?: any;
+    fontBig?: boolean;
+    smooth?: boolean;
+    dark2?: any;
+    exact?: boolean
 }
 // #01BF7
 export const Button = styled(LinkScroll)<ButtonProps>`

@@ -79,7 +79,7 @@ export const NavLinks = styled(LinkScroll)`
     border-bottom: 2px solid ${({theme})=> theme.colors.lemon};
   }
 `;
-export const NavBtnLink = styled(LinkScroll)`
+export const NavBtnLink = styled(LinkRouter)`
   outline: 0;
   border: 0;
   border-radius: 50px;

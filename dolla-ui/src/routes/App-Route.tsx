@@ -4,6 +4,7 @@ import Home from "../pages/Home/Home";
 import About from "../pages/About/components/About";
 import Contact from "../pages/Contact/components/Contact";
 import LayoutWrapper from "../utils/Wrapper/Layout-wrapper";
+import Login from "../pages/Login/components/Login";
 
 /** Routes */
 
@@ -37,6 +38,10 @@ const routes = [
         Component={About}
       />
     ),
+  },
+  {
+    path: "/sign-in",
+    element: <Login/>
   },
   {
     path: "*",
